@@ -1,11 +1,22 @@
-# Containers interoperability
+# Container Interoperability
 
-The "container-interop" project tries to bring interoperability between DI containers through discussions and trial.
+The "container-interop" project attempts to achieve the interoperability of
+*container* objects (service locators, dependency injection containers, etc.),
+through discussions and trial, by establishing common interfaces.
 
-The work done here is not endorsed by the [PHP-FIG](http://www.php-fig.org/), but we
-adhere to its spirit and hope this project will pave the way for one or several PSRs.
+If PHP projects that provide container implementations begin to adopt these
+common interfaces, then PHP applications and projects that use containers can
+depend on the common interfaces instead of specific implementations. This
+facilitates a high-level of interoperability and flexibility that allows users
+to consume *any* container implementation that be be adapted to these
+interfaces.
 
-## Using
+The work done in this project is not officially endorsed by the
+[PHP-FIG](http://www.php-fig.org/), but it is being worked on by members of
+PHP-FIG and other good developers. We adhere to the spirit and ideals of
+PHP-FIG, and hope this project will pave the way for one or more future PSRs.
+
+## Installation
 
 You can install this package through Composer:
 
@@ -17,13 +28,13 @@ You can install this package through Composer:
 }
 ```
 
-Bear in mind that minor versions (e.g. 1.*) have no BC breaks, however major versions do have BC breaks.
+The package will adhere to the [SemVer](http://semver.org/) specification.
 
-## Available interfaces
+## Available Interfaces
 
 *None*
 
-## Interfaces in the works
+## Interfaces in the Works
 
 - [`ContainerInterface`](src/Interop/Container/ContainerInterface.php): Join [the discussions](https://github.com/container-interop/container-interop/issues?labels=ContainerInterface&page=1&state=open)
 

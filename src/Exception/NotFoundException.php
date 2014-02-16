@@ -6,8 +6,8 @@
 namespace Interop\Container\Exception;
 
 /**
- * Base interface representing a generic exception in a container.
+ * A NotFoundException is thrown when an item requested from the container is not found.
  */
-interface ContainerException
+interface NotFoundException extends ContainerException
 {
 }
