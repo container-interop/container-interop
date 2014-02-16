@@ -6,8 +6,8 @@
 namespace Interop\Container\Exception;
 
 /**
- * No entry was found in the container.
+ * A ContainerException is generic exception that is thrown by the container.
  */
-interface NotFoundException extends ContainerException
+interface ContainerException
 {
 }
