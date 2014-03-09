@@ -36,6 +36,7 @@ between minor versions.
 ### Proposed
 
 - [`ContainerInterface`](src/Interop/Container/ContainerInterface.php): Join [the discussions](https://github.com/container-interop/container-interop/issues?labels=ContainerInterface&page=1&state=open)
+- [`ParentAwareContainerInterface`](src/Interop/Container/ParentAwareContainerInterface.php): Join the discussions (TODO: put link to discussion here)
 
 ## Workflow
 
