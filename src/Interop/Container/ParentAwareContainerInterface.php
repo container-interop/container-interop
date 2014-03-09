@@ -18,7 +18,7 @@ interface ParentAwareContainerInterface
      * Sets the parent container associated to that container. This container will call
      * the parent container as a fallback no entry is associated with the current identifier. 
      * 
-     * @param ReadableContainerInterface $container
+     * @param ContainerInterface $container
      */
-    public function setParentContainer(ReadableContainerInterface $container);
+    public function setParentContainer(ContainerInterface $container);
 }
