@@ -9,7 +9,7 @@ namespace Interop\Container;
  * Containers implementing this interface will call the "parent" container if they do not have
  * an entry associated with the requested identifier.
  * Containers implementing this interface can therefore communicate both ways with other containers:
- *  - they can provide entries to other containers (through the ReadableContainerInterface interface)
+ *  - they can provide entries to other containers (through the ContainerInterface interface)
  *  - they can consume entries from other containers (because of the ParentAwareContainerInterface interface)
  */
 interface ParentAwareContainerInterface
