@@ -7,8 +7,5 @@
 		"psr-4" : {
 			"Interop\\Container\\" : "src/Interop/Container/"
 		}
-	},
-	"replace" : {
-	    "container-interop/container-interop": "~1.0"
 	}
 }
