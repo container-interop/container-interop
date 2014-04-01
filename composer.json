@@ -1,11 +1,14 @@
 {
-    "name": "container-interop/container-interop",
-    "type": "library",
-    "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Interop\\Container\\": "src/Interop/Container/"
-        }
-    }
+	"name" : "container-interop/container-interop",
+	"type" : "library",
+	"description" : "Promoting the interoperability of container objects (DIC, SL, etc.)",
+	"license" : "MIT",
+	"autoload" : {
+		"psr-4" : {
+			"Interop\\Container\\" : "src/Interop/Container/"
+		}
+	},
+	"replace" : {
+	    "container-interop/container-interop": "~1.0"
+	}
 }
