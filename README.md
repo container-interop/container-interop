@@ -2,19 +2,15 @@
 
 [![Latest Stable Version](https://poser.pugx.org/container-interop/container-interop/v/stable.png)](https://packagist.org/packages/container-interop/container-interop)
 
-*container-interop* tries to identify and standardize features in *container* objects (service locators,
-dependency injection containers, etc.) to achieve interopererability.
+The *container-interop* group is aimed at identifying and standardising features in *container* objects to achieve interopererability. Container objects include service locators, dependency injection containers, etc.
 
-We produce standards on the form of PHP interfaces or recommendations.
+We produce standards in the shape of PHP interfaces or recommendations which projects that *provide* containers can follow.
 
-If PHP projects that provide containers follow these standards, then PHP applications and projects
-that use containers can depend on the common interfaces instead of specific implementations.
-This facilitates a high-level of interoperability and flexibility that allows users to consume
-*any* container implementation that can be adapted to these interfaces.
+The highest goal is to enable PHP applications and projects that *use* containers to depend on common interfaces instead of specific implementations.
 
-The work done in this project is not officially endorsed by the [PHP-FIG](http://www.php-fig.org/), but it is being
-worked on by members of PHP-FIG and other good developers. We adhere to the spirit and ideals of PHP-FIG, and hope
-this project will pave the way for one or more future PSRs.
+This facilitates a high-level of interoperability and flexibility that allows users to consume *any* container implementation that can be adapted to these interfaces.
+
+The work done in this project is not officially endorsed by the [PHP-FIG](http://www.php-fig.org/), but it is being worked on by members of PHP-FIG and other good developers. We adhere to the spirit and ideals of PHP-FIG, and hope this project will pave the way for one or more future PSRs.
 
 ## Installation
 
