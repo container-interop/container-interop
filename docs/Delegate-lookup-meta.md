@@ -13,7 +13,7 @@ Implementation of this feature is therefore recommanded.
 2. Why Bother?
 --------------
 
-The [`ContainerInterface`](../src/Interop/Container/ContainerInterface.php) ([meta doc](ContainerInterface.md))
+The [`ContainerInterface`](../src/ContainerInterface.php) ([meta doc](ContainerInterface.md))
 standardizes how frameworks and libraries make use of a container to obtain objects and parameters.
 
 By standardizing such a behavior, frameworks and libraries relying on the `ContainerInterface`

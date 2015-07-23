@@ -38,10 +38,10 @@ Users of dependency injections containers (DIC) are refered to as `user`.
 ### 1.2 Exceptions
 
 Exceptions directly thrown by the container MUST implement the 
-[`Interop\Container\Exception\ContainerException`](../src/Interop/Container/Exception/ContainerException.php).
+[`Interop\Container\Exception\ContainerException`](../src/Exception/ContainerException.php).
 
 A call to the `get` method with a non-existing id SHOULD throw a
-[`Interop\Container\Exception\NotFoundException`](../src/Interop/Container/Exception/NotFoundException.php).
+[`Interop\Container\Exception\NotFoundException`](../src/Exception/NotFoundException.php).
 
 ### 1.3 Additional features
 
