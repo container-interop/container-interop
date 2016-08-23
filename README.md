@@ -56,6 +56,7 @@ View open [request for comments](https://github.com/container-interop/container-
 - [auryn-container-interop](https://github.com/elazar/auryn-container-interop)
 - [Burlap](https://github.com/codeeverything/burlap)
 - [Chernozem](https://github.com/pyrsmk/Chernozem)
+- [Data Manager](https://github.com/chrismichaels84/data-manager)
 - [Disco](https://github.com/bitexpert/disco)
 - [InDI](https://github.com/idealogica/indi)
 - [League/Container](http://container.thephpleague.com/)
@@ -72,7 +73,6 @@ View open [request for comments](https://github.com/container-interop/container-
 - [XStatic](https://github.com/jeremeamia/xstatic)
 - [Zend\ServiceManager](https://github.com/zendframework/zend-servicemanager)
 - [Zit](https://github.com/inxilpro/Zit)
-- [Data Manager](https://github.com/chrismichaels84/data-manager)
 
 ### Projects implementing the *delegate lookup* feature
 
