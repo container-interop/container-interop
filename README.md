@@ -72,6 +72,7 @@ View open [request for comments](https://github.com/container-interop/container-
 - [XStatic](https://github.com/jeremeamia/xstatic)
 - [Zend\ServiceManager](https://github.com/zendframework/zend-servicemanager)
 - [Zit](https://github.com/inxilpro/Zit)
+- [Data Manager](https://github.com/chrismichaels84/data-manager)
 
 ### Projects implementing the *delegate lookup* feature
 
