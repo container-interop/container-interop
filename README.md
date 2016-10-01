@@ -76,6 +76,7 @@ View open [request for comments](https://github.com/container-interop/container-
 
 ### Projects implementing the *delegate lookup* feature
 
+- [Aura.Di](https://github.com/auraphp/Aura.Di)
 - [Burlap](https://github.com/codeeverything/burlap)
 - [Chernozem](https://github.com/pyrsmk/Chernozem)
 - [InDI](https://github.com/idealogica/indi)
