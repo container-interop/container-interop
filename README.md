@@ -102,6 +102,7 @@ The list below contains only a sample of all the projects consuming `ContainerIn
 | | Downloads |
 | --- | --- |
 | [Adroit](https://github.com/bitexpert/adroit) | ![](https://img.shields.io/packagist/dt/bitexpert/adroit.svg) |
+| [Behat](https://github.com/Behat/Behat/pull/974) | ![](https://img.shields.io/packagist/dt/behat/behat.svg) |
 | [blast-facades](https://github.com/phpthinktank/blast-facades): Minimize complexity and represent dependencies as facades. | ![](https://img.shields.io/packagist/dt/blast/facades.svg) |
 | [interop.silex.di](https://github.com/thecodingmachine/interop.silex.di): an extension to [Silex](http://silex.sensiolabs.org/) that adds support for any *container-interop* compatible container | ![](https://img.shields.io/packagist/dt/mouf/interop.silex.di.svg) |
 | [mindplay/walkway](https://github.com/mindplay-dk/walkway): a modular request router | ![](https://img.shields.io/packagist/dt/mindplay/walkway.svg) |
