@@ -3,6 +3,19 @@
 [![Latest Stable Version](https://poser.pugx.org/container-interop/container-interop/v/stable.png)](https://packagist.org/packages/container-interop/container-interop)
 [![Total Downloads](https://poser.pugx.org/container-interop/container-interop/downloads.svg)](https://packagist.org/packages/container-interop/container-interop)
 
+## Deprecation warning!
+
+Starting Feb. 13th 2017, container-interop is officially deprecated in favor of [PSR-11](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md).
+Container-interop has been the test-bed of PSR-11. From v1.2, container-interop directly extends PSR-11 interfaces.
+Therefore, all containers implementing container-interop are now *de-facto* compatible with PSR-11.
+
+- Projects implementing container-interop interfaces are encouraged to directly implement PSR-11 interfaces instead.
+- Projects consuming container-interop interfaces are very strongly encouraged to directly type-hint on PSR-11 interfaces, in order to be compatible with PSR-11 containers that are not compatible with container-interop.
+
+Regarding the delegate lookup feature, that is present in container-interop and not in PSR-11, the feature is actually a design pattern. It is therefore not deprecated. Documentation regarding this design pattern will be migrated from this repository into a separate website in the future.
+
+## About
+
 *container-interop* tries to identify and standardize features in *container* objects (service locators,
 dependency injection containers, etc.) to achieve interoperability.
 

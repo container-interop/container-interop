@@ -8,5 +8,8 @@
         "psr-4": {
             "Interop\\Container\\": "src/Interop/Container/"
         }
+    },
+    "require": {
+        "psr/container": "^1.0"
     }
 }
