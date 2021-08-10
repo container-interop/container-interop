@@ -11,8 +11,8 @@ This version of the package can be used in interim releases of packages that pre
 We recommend the following workflow for **library packages**:
 
 - Create a new minor release with the following changes to your package:
-  - Require `psr/container` (`composer require psr/container`)
-  - Update your minimum supported container-interop/container-interop version to 1.3.0 (`composer require "psr/container:^1.3"`)
+  - Require `psr/container` (`composer require psr/container:^1.1`)
+  - Update your minimum supported container-interop/container-interop version to 1.3.0 (`composer require "container-interop/container-interop:^1.3"`)
   - Update any typehints in your library that reference container-interop interfaces to instead reference PSR-11 interfaces:
     - `Interop\Container\ContainerInterface` becomes `Psr\Container\ContainerInterface`
     - `Interop\Container\\Exception\ContainerException` becomes `Psr\Container\ContainerExceptionInterface`
