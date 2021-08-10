@@ -3,6 +3,44 @@
 [![Latest Stable Version](https://poser.pugx.org/container-interop/container-interop/v/stable.png)](https://packagist.org/packages/container-interop/container-interop)
 [![Total Downloads](https://poser.pugx.org/container-interop/container-interop/downloads.svg)](https://packagist.org/packages/container-interop/container-interop)
 
+## Polyfill Status
+
+Starting with the 1.3.0 release, the various artifacts of this package are all now [class aliases](https://php.net/class_alias) of the official [PSR-11 interfaces](https://www.php-fig.org/psr/psr-11/).
+This version of the package can be used in interim releases of packages that previously depended on container-interop to allow them to adopt PSR-11 in a backwards compatible way, since aliases and the classes they alias can be used interchangeably.
+
+We recommend the following workflow for **library packages**:
+
+- Create a new minor release with the following changes to your package:
+  - Require `psr/container` (`composer require psr/container`)
+  - Update your minimum supported container-interop/container-interop version to 1.3.0 (`composer require "psr/container:^1.3"`)
+  - Update any typehints in your library that reference container-interop interfaces to instead reference PSR-11 interfaces:
+    - `Interop\Container\ContainerInterface` becomes `Psr\Container\ContainerInterface`
+    - `Interop\Container\\Exception\ContainerException` becomes `Psr\Container\ContainerExceptionInterface`
+    - `Interop\Container\Exception\NotFoundException` becomes `Psr\Container\NotFoundExceptionInterface`
+  - Message in your release that developers should start updating their code to use PSR-11 typehints instead of container-interop.
+- Create another minor release or major release after this:
+  - Remove the `container-interop/container-interop` requirement from the package.
+  - If creating a new minor release, _suggest_ the container-interop package if users experience breakage with the following changes in your `composer.json`:
+
+    ```json
+    "suggest": {
+        "container-interop/container-interop": "For consumers who have not updated code to reference PSR-11 interfaces"
+    }
+    ```
+
+We leave it as a library author decision whether or not to remove the container-interop requirement in a new minor or new major release.
+There are definitely BC ramifications when users are pinning using the `^` operator, as they may have missed the intermediary release that pins to the container-interop polyfill release (1.3.0); while a suggestion may be enough, it may still be considered a BC breaking change.
+
+We recommend the following workflow for **end users** of container-interop compatible libraries:
+
+- Require container-interop 1.3.0: (`composer require "psr/container:^1.3"`)
+  - Update any typehints in your application that reference container-interop interfaces to instead reference PSR-11 interfaces:
+    - `Interop\Container\ContainerInterface` becomes `Psr\Container\ContainerInterface`
+    - `Interop\Container\\Exception\ContainerException` becomes `Psr\Container\ContainerExceptionInterface`
+    - `Interop\Container\Exception\NotFoundException` becomes `Psr\Container\NotFoundExceptionInterface`
+
+At this point, your own application is PSR-11 compatible, and can safely update to versions of libraries you use that remove support for container-interop.
+
 ## Deprecation warning!
 
 Starting Feb. 13th 2017, container-interop is officially deprecated in favor of [PSR-11](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md).
