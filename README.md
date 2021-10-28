@@ -5,7 +5,7 @@
 
 ## Polyfill Status
 
-Starting with the 1.3.0 release, the various artifacts of this package are all now [class aliases](https://php.net/class_alias) of the official [PSR-11 interfaces](https://www.php-fig.org/psr/psr-11/).
+Starting with the 2.0.0 release, the various artifacts of this package are all now [class aliases](https://php.net/class_alias) of the official [PSR-11 interfaces](https://www.php-fig.org/psr/psr-11/).
 This version of the package can be used in interim releases of packages that previously depended on container-interop to allow them to adopt PSR-11 in a backwards compatible way, since aliases and the classes they alias can be used interchangeably.
 
 We recommend the following workflow for **library packages**:
