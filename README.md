@@ -15,7 +15,7 @@ We recommend the following workflow for **library packages**:
   - Update your minimum supported container-interop/container-interop version to 1.3.0 (`composer require "container-interop/container-interop:^1.3"`)
   - Update any typehints in your library that reference container-interop interfaces to instead reference PSR-11 interfaces:
     - `Interop\Container\ContainerInterface` becomes `Psr\Container\ContainerInterface`
-    - `Interop\Container\\Exception\ContainerException` becomes `Psr\Container\ContainerExceptionInterface`
+    - `Interop\Container\Exception\ContainerException` becomes `Psr\Container\ContainerExceptionInterface`
     - `Interop\Container\Exception\NotFoundException` becomes `Psr\Container\NotFoundExceptionInterface`
   - Message in your release that developers should start updating their code to use PSR-11 typehints instead of container-interop.
 - Create another minor release or major release after this:
